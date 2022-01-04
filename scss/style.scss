@@ -1,5 +1,6 @@
 @import "./ComponentsStyle/body",
-        "./ComponentsStyle/colores";
+        "./ComponentsStyle/colores",
+        "./ComponentsStyle/mixin";
 
 
 /*Estilos el Menu*/
@@ -18,6 +19,18 @@
 .carousel-inner{
     max-height: 39rem;
 }
+
+.cont-1{
+    width: 75em;
+    margin: auto;
+    text-align: center;
+}
+
+.cont-2{
+    @extend .cont-1;
+}
+
+
 
 /*Estilos contacto mapa*/
 #local{
